@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Elena Khodanovich](https://up.htmlacademy.ru/adaptive/18/user/1138493).
-* Наставник: `Неизвестно`.
+* Наставник: Полина Катышева.
 
 ---
 
