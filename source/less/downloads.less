@@ -1,8 +1,6 @@
-@textcolor: #ffffff;
-
 .downloads {
   font-family: "Open Sans", "Arial", sans-serif;
-  color: @textcolor;
+  color: @header-color;
   text-align: center;
 }
 
@@ -13,7 +11,7 @@
   font-size: 24px;
   line-height: 32px;
   font-weight: 300;
-  color: @textcolor;
+  color: @header-color;
   text-transform: uppercase;
   background:
     url("../img/iphone-hand-mobile@1x.png") no-repeat 50% 100%,
@@ -23,14 +21,14 @@
 .downloads__wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #1d2631;
+  background-color: @downloads-background;
 }
 
 .downloads__app-store {
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  color: @textcolor;
+  color: @header-color;
   text-decoration: none;
 }
 
@@ -44,27 +42,29 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
-  color: @textcolor;
+  color: @header-color;
 }
 
-.downloads__item a {
-  text-decoration: none;
-}
+.downloads__item {
+  a {
+    text-decoration: none;
+  }
 
-.downloads__item--apple {
-  padding-top: 25px;
-  padding-bottom: 40px;
-  background: url("../img/logo-apple.svg") no-repeat 50% 50%;
-}
+  &--apple {
+    padding-top: 25px;
+    padding-bottom: 40px;
+    background: url("../img/logo-apple.svg") no-repeat 50% 50%;
+  }
 
-.downloads__item--android {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background: url("../img/logo-android.svg") no-repeat 50% 50%;
-}
+  &--android {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: url("../img/logo-android.svg") no-repeat 50% 50%;
+  }
 
-.downloads__item--windows {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background: url("../img/logo-microsoft.svg") no-repeat 50% 50%;
+  &--windows {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: url("../img/logo-microsoft.svg") no-repeat 50% 50%;
+  }
 }
