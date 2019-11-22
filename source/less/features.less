@@ -1,32 +1,66 @@
 .features {
   margin: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
   text-align: center;
+  outline: 1px solid orange;
 }
 
-.features__slogan {
-  margin: 0;
+.features__effect {
+  display: none;
+  background-color: @text-background;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  outline: 1px solid red;
+}
+
+.features__wrapper-effect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 0;
   padding-top: 45px;
   padding-bottom: 30px;
+  text-align: left;
+  outline: 1px solid red;
+}
+
+.features__wrapper {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: @text-background;
+  outline: 1px solid red;
+}
+
+.features__ask,
+.features__answer {
+  margin: 0;
+  padding-top: 20px;
   font-size: 24px;
   line-height: 32px;
   font-weight: 300;
+  outline: 1px solid orange;
+}
+
+.features__wrapper-list {
+  background-color: @features-background;
 }
 
 .features__list {
-  margin: 0;
-  padding-top: 85px;
-  padding-bottom: 330px;
-  background: url("../img/iphone-screen-mobile@1x.png") no-repeat 52% 100%;
-  background-color: @features-background;
+  padding-top: 50px;
+  padding-bottom: 350px;
   list-style: none;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 100%;
+  outline: 1px solid red;
+}
+
+.features__item {
+  outline: 1px solid orange;
 }
 
 .features__subtitle {
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 17px;
+  padding-bottom: 15px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: @subtitle-color;
@@ -34,9 +68,137 @@
 
 .features__description {
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: @text-color:;
+  color: @text-color;
+}
+
+@media (min-width: 660px) {
+  .features__ask,
+  .features__answer {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .features__answer {
+    padding: 10px 40px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 75px;
+    padding-bottom: 30px;
+    text-align: left;
+    background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat 20px 20px;
+  }
+
+  .features__item {
+    width: 310px;
+  }
+
+  .features__effect {
+    display: block;
+  }
+
+  .features__effect-header {
+    width: 310px;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: @subtitle-color;
+  }
+
+  .features__effect-note {
+    width: 310px;
+    padding-top: 30px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: @text-color;
+  }
+
+  .features__effect-link {
+    width: 310px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: @likes-color;
+  }
+
+  .features__wrapper-effect {
+    background: url("../img/timer.png") no-repeat 20px 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__wrapper {
+    padding-top: 45px;
+  }
+
+  .features__ask,
+  .features__answer {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .features__answer {
+    padding: 5px 150px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 400px;
+    padding-bottom: 30px;
+    text-align: center;
+    background:
+      url("../img/iphone-screen-1-desktop@1x.png") no-repeat 15px 60px,
+      url("../img/iphone-screen-2-desktop@1x.png") no-repeat 335px 60px,
+      url("../img/iphone-screen-3-desktop@1x.png") no-repeat 655px 60px;
+  }
+
+  .features__item {
+    width: 260px;
+  }
+
+  .features__subtitle {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .features__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .features__wrapper-effect {
+    padding-top: 70px;
+    background-size: 300px 347px;
+    background-position: 10px 0;
+  }
+
+  .features__effect-header,
+  .features__effect-note,
+  .features__effect-link {
+    width: 575px;
+  }
+
+  .features__effect-note {
+    padding-top: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .features__effect-link {
+    padding-top: 15px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

@@ -1,51 +1,74 @@
 .downloads {
-  font-family: "Open Sans", "Arial", sans-serif;
   color: @header-color;
   text-align: center;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  background-size: cover;
+  outline: 1px solid yellow;
+}
+
+.downloads__wrapper {
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 35% 30%;
 }
 
 .downloads__slogan {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 320px;
+  padding-top: 20px;
+  padding-bottom: 315px;
   font-size: 24px;
   line-height: 32px;
   font-weight: 300;
   color: @header-color;
-  text-transform: uppercase;
-  background:
-    url("../img/iphone-hand-mobile@1x.png") no-repeat 50% 100%,
-    url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  outline: 1px solid yellow;
 }
 
-.downloads__wrapper {
+.downloads__wrapper-app {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   background-color: @downloads-background;
+  outline: 1px solid yellow;
 }
 
 .downloads__app-store {
+  display: block;
+  padding: 15px 5px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   color: @header-color;
   text-decoration: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 50px;
+  outline: 1px solid yellow;
 }
 
 .downloads__list {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
   text-align: center;
   list-style: none;
+  outline: 1px solid yellow;
 }
 
 .downloads__note {
-  margin: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
   color: @header-color;
+  outline: 1px solid yellow;
 }
 
 .downloads__item {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  outline: 1px solid yellow;
+
   a {
     text-decoration: none;
   }
@@ -53,18 +76,110 @@
   &--apple {
     padding-top: 25px;
     padding-bottom: 40px;
-    background: url("../img/logo-apple.svg") no-repeat 50% 50%;
+    background-image: url("../img/logo-apple.svg");
   }
 
   &--android {
     padding-top: 25px;
     padding-bottom: 25px;
-    background: url("../img/logo-android.svg") no-repeat 50% 50%;
+    background-image: url("../img/logo-android.svg");
   }
 
   &--windows {
     padding-top: 25px;
     padding-bottom: 25px;
-    background: url("../img/logo-microsoft.svg") no-repeat 50% 50%;
+    background-image: url("../img/logo-microsoft.svg");
+  }
+}
+
+@media (min-width: 660px) {
+  .downloads {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
+  }
+
+  .downloads__wrapper {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: 40% 100%;
+    background-size: auto;
+  }
+
+  .downloads__slogan {
+    width: 220px;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 15px;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 300;
+  }
+
+  .downloads__wrapper-app {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+  }
+
+  .downloads__app-store {
+    width: 300px;
+    margin: 0;
+  }
+
+  .downloads__list {
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .downloads__note {
+    width: 300px;
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 85px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1200px) {
+  .downloads {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
+  }
+
+  .downloads__wrapper {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: -30% 100%;
+    background-size: auto;
+  }
+
+  .downloads__slogan {
+    width: 240px;
+    margin: 0;
+    padding-top: 110px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 300;
+  }
+
+  .downloads__app-store {
+    font-size: 21px;
+  }
+
+  .downloads__list {
+    margin-top: 70px;
+  }
+
+  .downloads__note {
+    width: 300px;
+    margin-left: 0;
+    margin-top: 25px;
+    margin-bottom: 110px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
   }
 }
