@@ -1,6 +1,12 @@
 .page-header {
   margin: 0;
-  /*background-color: @header-background;*/
+  background-color: @header-background;
 
   outline: 1px solid red;
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    background-color: rgba(40, 54, 69, 0.3);
+  }
 }
