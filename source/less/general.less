@@ -14,13 +14,15 @@ img {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
+  outline: 1px solid lime;
 }
 
-@media (min-width: 660px) {
+@media (min-width: @tablet-width) {
   body {
     /*background: url("../img/pink-index-tablet.jpg") no-repeat 50% 0;*/
   }
 
+  .container-tablet,
   .container {
     width: 620px;
     margin: 0 auto;
@@ -28,10 +30,9 @@ img {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: @desktop-width) {
   body {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
-    /*url("../img/pink-index-desktop.jpg") no-repeat 50% 0;*/
+    /*background: url("../img/pink-index-desktop.jpg") no-repeat 50% 0;*/
   }
 
   .container-desktop,

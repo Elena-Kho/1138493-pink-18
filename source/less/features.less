@@ -32,7 +32,6 @@
 
 .features__ask,
 .features__answer {
-  margin: 0;
   padding-top: 20px;
   font-size: 24px;
   line-height: 32px;
@@ -75,7 +74,7 @@
   color: @text-color;
 }
 
-@media (min-width: 660px) {
+@media (min-width: @tablet-width) {
   .features__ask,
   .features__answer {
     font-size: 40px;
@@ -136,7 +135,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: @desktop-width) {
   .features__wrapper {
     padding-top: 45px;
   }
@@ -147,14 +146,11 @@
     line-height: 55px;
   }
 
-  .features__answer {
-    padding: 5px 150px;
-  }
-
   .features__list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
     padding-top: 400px;
     padding-bottom: 30px;
     text-align: center;
