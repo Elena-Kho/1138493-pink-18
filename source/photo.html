@@ -3,20 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Pink">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Развернуть меню">Меню</button>
+        <div class="main-nav__wrapper container">
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Pink">
+          </a>
+          <button class="main-nav__toggle" type="button" aria-label="Развернуть меню">Меню</button>
+        </div>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a>Фотографии</a>
           </li>
           <li class="site-list__item">
@@ -29,20 +32,21 @@
       </nav>
     </header>
     <main class="page-photo">
-        <h1 class="visually-hidden">Фотографии пользователей</h1>
+        <div class="page-photo__wrapper">
+          <h1 class="page-photo__heading page-photo__heading--tablet">Фотографии<br> пользователей</h1>
+        </div>
         <section class="gallery">
-          <div class="gallery__wrapper">
-            <p class="gallery__title page-heading">Фотографии пользователей</p>
-            <p class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <div class="gallery__wrapper-slogan">
+              <p class="gallery__slogan gallery__slogan--tablet gallery__slogan--desktop">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           </div>
-          <ul class="gallery__list">
+          <a href="#">
+            <img class="gallery__photo" src="img/panorama-desktop@1x.jpg" width="320" height="137" alt="Фото пользователя Анна">
+          </a>
+          <ul class="gallery__list container">
             <li class="gallery__item user-photo">
-              <a href="#">
-                <img class="user-photo__image user-photo__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото пользователя Анна">
-              </a>
               <div class="user-photo__wrapper">
                 <p class="user-photo__name"><b>Анна</b> <span>(5 минут назад)</span></p>
-                <p class="user-photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <p class="user-photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои <span>вопросы!</span></p>
                 <button class="user-photo__likes" type="button">Нравится: 215</button>
               </div>
             </li>
@@ -109,7 +113,7 @@
           </ul>
         </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Pink">
       </a>

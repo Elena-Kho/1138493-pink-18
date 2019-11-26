@@ -1,18 +1,32 @@
 .user-photo {
-  margin: 0 auto;
+  margin: 0;
+  margin-bottom: 20px;
   color: @text-color;
+
+  a {
+    display: block;
+    margin: 0;
+  }
+}
+
+.user-photo--panorama a {
+  margin: 0;
 }
 
 .user-photo__wrapper {
   margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 25px 20px;
+  padding: 15px 20px;
   text-align: left;
   background-color: @photo-background;
 }
 
+.user-photo__image {
+  display: block;
+  width: 100%;
+}
+
 .user-photo__name {
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -35,13 +49,17 @@
   font-weight: 400;
   color: @text-color;
   text-align: left;
+
+  span {
+    display: none;
+  }
 }
 
 .user-photo__likes {
   margin: 0;
   margin-left: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: none;
   font-size: 12px;
   line-height: 24px;
@@ -52,4 +70,27 @@
   background-color: transparent;
   outline: none;
   cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photo:not(:first-child) {
+    width: 300px;
+  }
+
+  .user-photo:first-child {
+    flex-grow: 1;
+  }
+
+  .user-photo a {
+    margin: 0;
+  }
+
+  .user-photo__wrapper {
+    min-height: 120px;
+    margin: 0;
+  }
+
+  .user-photo__text span {
+    display: block;
+  }
 }
