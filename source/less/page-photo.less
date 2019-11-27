@@ -1,5 +1,50 @@
 .page-photo {
-  font-family: "Open Sans", "Arial", sans-serif;
   color: @header-color;
   text-align: center;
+}
+
+.page-photo__wrapper {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  background-size: cover;
+}
+
+.page-photo__heading {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .page-photo__wrapper {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
+    background-size: cover;
+  }
+
+  .page-photo__heading {
+    padding-top: 80px;
+    padding-bottom: 140px;
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .page-photo__heading--tablet {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-photo__wrapper {
+    margin-top: -110px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
+    background-size: cover;
+  }
+
+  .page-photo__heading {
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
 }

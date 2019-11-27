@@ -1,36 +1,59 @@
 .gallery {
   margin: 0 auto;
-  font-family: "Open Sans", "Arial", sans-serif;
   color: @header-color;
 }
 
-.gallery__wrapper {
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
-}
-
-.gallery__title {
-  margin: 0;
-  padding-top: 35px;
-  padding-bottom: 85px;
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 300;
-  text-transform: uppercase;
+.gallery__wrapper-slogan {
+  background-color: @text-background;
 }
 
 .gallery__slogan {
-  margin: 0;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  width: 250px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: @text-color;
-  background-color: @text-background;
+}
+
+.gallery__photo {
+  width: 100%;
+  display: block;
 }
 
 .gallery__list {
-  margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.gallery__item {
+  text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__slogan {
+    padding-top: 90px;
+    padding-bottom: 60px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .gallery__slogan--tablet {
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__slogan--desktop {
+    width: 600px;
+  }
 }

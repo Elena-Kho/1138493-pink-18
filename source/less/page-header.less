@@ -1,11 +1,10 @@
 .page-header {
   margin: 0;
-  padding: 0;
-  padding-top: 20px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  background-color: @header-color;
+  background-color: @header-background;
 }
 
-.page-header__logo {
-  margin-left: 20px;
+@media (min-width: @desktop-width) {
+  .page-header {
+    background-color: rgba(40, 54, 69, 0.3);
+  }
 }
