@@ -6,6 +6,8 @@
   font-size: 24px;
   line-height: 32px;
   font-weight: 300;
+  color: @header-color;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
@@ -13,14 +15,16 @@
     max-width: 500px;
     margin: 0 auto;
     padding-top: 80px;
-    padding-bottom: 140px;
+    padding-bottom: 120px;
     font-size: 50px;
     line-height: 55px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  max-width: 800px;
-  padding-top: 180px;
-  padding-bottom: 100px;
+  .heading {
+    max-width: 800px;
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
 }

@@ -1,23 +1,23 @@
-.price-background {
+.price__background {
   padding-top: 50px;
   padding-bottom: 100px;
   background-color: @features-background;
 }
 
-.price-wrapper {
+.price__wrapper {
   width: 320px;
   margin: 0 auto;
   overflow: hidden;
 }
 
-.price-table {
+.price__table {
   position: relative;
   left: -97%;
   width: 900px;
   padding: 0;
   background-color: @text-background;
   border-collapse: collapse;
-  border-right: 2px solid #e5e5e5;
+  border-right: 2px solid @border-color;
   overflow: hidden;
 }
 
@@ -33,21 +33,22 @@
   color: @header-color;
   text-align: center;
   text-transform: uppercase;
-}
 
-.price__tariff span {
-  font-size: 18px;
-  font-weight: 300;
+  span {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+  }
 }
 
 .price__tariff-title {
   background-color: @header-background;
-  border-right: 2px solid #e5e5e5;
-  border-bottom: 2px solid #e5e5e5;
-}
+  border-right: 2px solid @border-color;
+  border-bottom: 2px solid @border-color;
 
-.price__tariff-title--empty {
-  background-color: @features-background;
+  &--empty {
+    background-color: @features-background;
+  }
 }
 
 .price__options {
@@ -57,13 +58,13 @@
   font-weight: 400;
   color: @text-color;
   text-align: left;
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom: 2px solid @border-color;
 }
 
 .price__option-name {
   padding-left: 20px;
   text-transform: uppercase;
-  border-left: 2px solid #e5e5e5;
+  border-left: 2px solid @border-color;
   background-repeat: no-repeat;
   background-position: 90% 50%;
 
@@ -83,11 +84,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .price-wrapper {
+  .price__wrapper {
     width: 620px;
   }
 
-  .price-table {
+  .price__table {
     position: static;
     width: 620px;
   }
@@ -95,11 +96,11 @@
   .price__option-name {
     font-size: 0;
     background-position: 50% 50%;
-  }
 
-  .price__option-name--first {
-    font-size: 14px;
-    text-transform: none;
+    &--first {
+      font-size: 14px;
+      text-transform: none;
+    }
   }
 
   .price__buttons {
@@ -108,21 +109,21 @@
 }
 
 @media (min-width: @desktop-width) {
-  .price-wrapper {
+  .price__wrapper {
     width: 940px;
   }
 
-  .price-table {
+  .price__table {
     width: 940px;
   }
 
   .price__tariff {
     height: 100px;
     font-size: 18px;
-  }
 
-  .price__tariff span {
-    font-size: 24px;
+    span {
+      font-size: 24px;
+    }
   }
 
   .price__options {
