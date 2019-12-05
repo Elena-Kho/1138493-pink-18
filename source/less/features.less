@@ -22,7 +22,6 @@
 
 .features__wrapper {
   padding-top: 20px;
-  padding-bottom: 30px;
   background-color: @text-background;
 }
 
@@ -35,11 +34,11 @@
 }
 
 .features__wrapper-list {
-  background-color: @features-background;
+  background: @features-background url("../img/bg-triangle-white.svg") no-repeat 0 0;
 }
 
 .features__list {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 350px;
   list-style: none;
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 100%;
@@ -166,6 +165,10 @@
   .features__description {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .features__effect {
+    background-color: @features-background;
   }
 
   .features__wrapper-effect {

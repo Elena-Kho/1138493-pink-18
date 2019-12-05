@@ -1,7 +1,7 @@
 .price__background {
-  padding-top: 50px;
+  padding-top: 150px;
   padding-bottom: 100px;
-  background-color: @features-background;
+  background: @features-background url("../img/bg-triangle-white.svg") no-repeat 0 0;
 }
 
 .price__wrapper {
@@ -49,6 +49,10 @@
   &--empty {
     background-color: @features-background;
   }
+
+  &--hit {
+    background: @header-background url("../img/bg-hit.png") no-repeat 0 0;
+  }
 }
 
 .price__options {
@@ -70,6 +74,7 @@
 
   &--yes {
     background-image: url("../img/icon-yes.svg");
+    background-size: 31px 21px;
   }
 
   &--no {

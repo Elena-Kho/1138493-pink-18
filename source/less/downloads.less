@@ -4,13 +4,11 @@
   text-align: center;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
   background-size: cover;
-  outline: 1px solid yellow;
 }
 
 .downloads__wrapper {
   background-repeat: no-repeat;
   background-position: 36% 31%;
-  outline: 1px solid pink;
 }
 
 .downloads__slogan {
@@ -27,21 +25,6 @@
   padding-top: 30px;
   padding-bottom: 10px;
   background-color: @downloads-background;
-  outline: 1px solid blue;
-}
-
-.downloads__app-store {
-  display: block;
-  padding: 15px 5px;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  color: @header-color;
-  text-decoration: none;
-  text-align: center;
-  border: 2px solid white;
-  border-radius: 50px;
-  outline: 1px solid yellow;
 }
 
 .downloads__list {
@@ -49,9 +32,8 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   list-style: none;
-  outline: 1px solid yellow;
 }
 
 .downloads__note {
@@ -59,35 +41,32 @@
   line-height: 24px;
   font-weight: 300;
   color: @header-color;
-  outline: 1px solid yellow;
 }
 
-.downloads__item {
-  padding-left: 40px;
-  padding-right: 40px;
+.downloads__link {
+  display: block;
+  margin-left: 15px;
+  margin-right: 20px;
+  text-decoration: none;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  outline: 1px solid yellow;
-
-  a {
-    text-decoration: none;
-  }
+  cursor: pointer;
 
   &--apple {
-    padding-top: 25px;
-    padding-bottom: 40px;
+    width: 46px;
+    height: 57px;
     background-image: url("../img/logo-apple.svg");
   }
 
   &--android {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    width: 42px;
+    height: 47px;
     background-image: url("../img/logo-android.svg");
   }
 
   &--windows {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    width: 44px;
+    height: 42px;
     background-image: url("../img/logo-microsoft.svg");
   }
 }

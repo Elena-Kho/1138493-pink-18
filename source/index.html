@@ -40,16 +40,16 @@
           <h2 class="visually-hidden">Скачать приложение</h2>
           <p class="downloads__slogan page-heading container">Взгляните на жизнь иначе!</p>
           <div class="downloads__wrapper-app">
-            <a class="downloads__app-store container" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+            <a class="downloads__app-store button button--downloads container" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
             <ul class="downloads__list container">
-              <li class="downloads__item downloads__item--apple">
-              <a href="https://www.apple.com/ru/ios/app-store/" aria-label="Ссылка на скачивание приложения в App Store"></a>
+              <li class="downloads__item">
+              <a class="downloads__link downloads__link--apple" href="https://www.apple.com/ru/ios/app-store/" aria-label="Ссылка на скачивание приложения в App Store"></a>
               </li>
-              <li class="downloads__item downloads__item--android">
-              <a href="https://play.google.com/store" aria-label="Ссылка на скачивание приложения в Google Play"></a>
+              <li class="downloads__item">
+              <a class="downloads__link downloads__link--android" href="https://play.google.com/store" aria-label="Ссылка на скачивание приложения в Google Play"></a>
               </li>
-              <li class="downloads__item downloads__item--windows">
-              <a href="https://www.microsoft.com/ru-ru/store/apps/windows" aria-label="Ссылка на скачивание приложения в Microsoft Store"></a>
+              <li class="downloads__item">
+              <a class="downloads__link downloads__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows" aria-label="Ссылка на скачивание приложения в Microsoft Store"></a>
               </li>
             </ul>
             <p class="downloads__note container">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -96,10 +96,14 @@
               <p class="reviews__age">25 лет, водитель трамвая</p>
             </li>
           </ul>
-          <ul class="reviews__buttons container">
-            <li><button type="button">1</button></li>
-            <li><button type="button">2</button></li>
-            <li><button type="button">3</button></li>
+          <ul class="reviews__buttons slider-controls container">
+            <li><button class="slider-controls__button slider-controls__button--active" type="button" aria-label="Слайд 1"></button></li>
+            <li><button class="slider-controls__button" type="button" aria-label="Слайд 2"></button></li>
+            <li><button class="slider-controls__button" type="button" aria-label="Слайд 3"></button></li>
+          </ul>
+          <ul class="reviews__arrows container">
+            <li><button class="reviews__arrows-left" type="button" aria-label="Назад"></button></li>
+            <li><button class="reviews__arrows-right" type="button" aria-label="Вперед"></button></li>
           </ul>
         </div>
       </section>
@@ -111,7 +115,7 @@
               <tr class="price__tariff">
                 <th class="price__tariff-title price__tariff-title--empty"></th>
                 <th class="price__tariff-title">База<span>1,99 USD</span></th>
-                <th class="price__tariff-title">Стандарт<span>3,99 USD</span></th>
+                <th class="price__tariff-title price__tariff-title--hit">Стандарт<span>3,99 USD</span></th>
                 <th class="price__tariff-title">Анлим<span>9,99 USD</span></th>
               </tr>
               <tr class="price__options">
@@ -134,29 +138,53 @@
               </tr>
             </table>
           </div>
-          <ul class="price__buttons container">
-            <li><button type="button">1</button></li>
-            <li><button type="button">2</button></li>
-            <li><button type="button">3</button></li>
+          <ul class="price__buttons slider-controls container">
+            <li><button class="slider-controls__button" type="button" aria-label="Слайд 1"></button></li>
+            <li><button class="slider-controls__button slider-controls__button--active"  type="button" aria-label="Слайд 2"></button></li>
+            <li><button class="slider-controls__button" type="button" aria-label="Слайд 3"></button></li>
           </ul>
         </div>
       </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <div class="contacts__wrapper container">
+          <p class="contacts__heading">Остались вопросы?<span>Свяжитесь с нами!</span></p>
+          <div class="contacts__wrapper-paragraph">
+            <p class="contacts__paragraph">Звоните:<span class="contacts__details">+7 (812) 555-66-66</span></p>
+            <p class="contacts__paragraph contacts__paragraph--email">Пишите:<span class="contacts__details contacts__details--email">mail@htmlacademy.ru</span></p>
+            <p class="contacts__paragraph contacts__paragraph--address">Приезжайте в гости:<span class="contacts__details">ул. Большая Конюшенная, 19/8</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Адрес на карте</h2>
+        <div class="map__wrapper">
+          <iframe class="map__iframe container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.2101771001978!2d30.322570675273983!3d59.93909459241222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1575466870624!5m2!1sru!2sru" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </section>
     </main>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+        <footer class="page-footer page-footer--index container">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Pink">
+      </a>
+      <ul class="social-list">
+        <li class="social-list__item social-list__item--twitter">
+          <a class="social-list__link social-list__link--twitter" href="" aria-label="Pink в Twitter"></a>
+        </li>
+        <li class="social-list__item social-list__item--facebook">
+          <a class="social-list__link social-list__link--facebook" href="" aria-label="Pink в Facebook"></a>
+        </li>
+        <li class="social-list__item social-list__item--youtube">
+          <a class="social-list__link social-list__link--youtube" href="" aria-label="Pink в Youtube"></a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
