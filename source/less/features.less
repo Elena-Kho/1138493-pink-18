@@ -1,7 +1,6 @@
 .features {
   margin: 0;
   text-align: center;
-  outline: 1px solid orange;
 }
 
 .features__effect {
@@ -9,7 +8,6 @@
   background-color: @text-background;
   padding-top: 30px;
   padding-bottom: 100px;
-  outline: 1px solid red;
 }
 
 .features__wrapper-effect {
@@ -20,14 +18,11 @@
   padding-top: 45px;
   padding-bottom: 30px;
   text-align: left;
-  outline: 1px solid red;
 }
 
 .features__wrapper {
   padding-top: 20px;
-  padding-bottom: 30px;
   background-color: @text-background;
-  outline: 1px solid red;
 }
 
 .features__ask,
@@ -36,23 +31,17 @@
   font-size: 24px;
   line-height: 32px;
   font-weight: 300;
-  outline: 1px solid orange;
 }
 
 .features__wrapper-list {
-  background-color: @features-background;
+  background: @features-background url("../img/bg-triangle-white.svg") no-repeat 0 0;
 }
 
 .features__list {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 350px;
   list-style: none;
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 100%;
-  outline: 1px solid red;
-}
-
-.features__item {
-  outline: 1px solid orange;
 }
 
 .features__subtitle {
@@ -176,6 +165,10 @@
   .features__description {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .features__effect {
+    background-color: @features-background;
   }
 
   .features__wrapper-effect {

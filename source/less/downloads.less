@@ -1,19 +1,18 @@
 .downloads {
+  margin-top: -65px;
   color: @header-color;
   text-align: center;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
   background-size: cover;
-  outline: 1px solid yellow;
 }
 
 .downloads__wrapper {
   background-repeat: no-repeat;
   background-position: 36% 31%;
-  outline: 1px solid pink;
 }
 
 .downloads__slogan {
-  padding-top: 20px;
+  padding-top: 100px;
   padding-bottom: 315px;
   font-size: 24px;
   line-height: 32px;
@@ -26,21 +25,6 @@
   padding-top: 30px;
   padding-bottom: 10px;
   background-color: @downloads-background;
-  outline: 1px solid blue;
-}
-
-.downloads__app-store {
-  display: block;
-  padding: 15px 5px;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  color: @header-color;
-  text-decoration: none;
-  text-align: center;
-  border: 2px solid white;
-  border-radius: 50px;
-  outline: 1px solid yellow;
 }
 
 .downloads__list {
@@ -48,9 +32,8 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   list-style: none;
-  outline: 1px solid yellow;
 }
 
 .downloads__note {
@@ -58,41 +41,39 @@
   line-height: 24px;
   font-weight: 300;
   color: @header-color;
-  outline: 1px solid yellow;
 }
 
-.downloads__item {
-  padding-left: 40px;
-  padding-right: 40px;
+.downloads__link {
+  display: block;
+  margin-left: 15px;
+  margin-right: 20px;
+  text-decoration: none;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  outline: 1px solid yellow;
-
-  a {
-    text-decoration: none;
-  }
+  cursor: pointer;
 
   &--apple {
-    padding-top: 25px;
-    padding-bottom: 40px;
+    width: 46px;
+    height: 57px;
     background-image: url("../img/logo-apple.svg");
   }
 
   &--android {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    width: 42px;
+    height: 47px;
     background-image: url("../img/logo-android.svg");
   }
 
   &--windows {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    width: 44px;
+    height: 42px;
     background-image: url("../img/logo-microsoft.svg");
   }
 }
 
 @media (min-width: @tablet-width) {
   .downloads {
+    margin-top: -110px;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
   }
 
@@ -108,7 +89,7 @@
   .downloads__slogan {
     width: 220px;
     margin: 0;
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 15px;
     font-size: 40px;
     line-height: 45px;
@@ -164,7 +145,6 @@
   .downloads__slogan {
     width: 240px;
     margin: 0;
-    padding-top: 110px;
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;

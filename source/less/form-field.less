@@ -1,44 +1,28 @@
-.form-field {
-  margin: 0 auto;
-  color: @header-color;
-}
-
 .form-field__wrapper {
   background-color: @text-background;
 }
 
-.form-field__text {
-  width: 280px;
+.form-field__slogan {
+  max-width: 280px;
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-  color: @text-color;
+}
 
-  span {
-    display: none;
-  }
+.form-field__slogan span {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
-  .form-field__text {
-    width: 500px;
-    margin: 0 auto;
-    padding-top: 90px;
-    padding-bottom: 60px;
-    font-size: 18px;
-    line-height: 30px;
+  .form-field__slogan {
+    max-width: 500px;
+  }
 
-    span {
-      display: block;
-    }
+  .form-field__slogan span {
+    display: inline;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .form-field__text {
-    width: 800px;
+  .form-field__slogan {
+    max-width: 800px;
   }
 }

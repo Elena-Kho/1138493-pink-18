@@ -1,0 +1,126 @@
+.reviews__wrapper {
+  margin-top: -50px;
+  padding-top: 50px;
+  background-color: @text-background;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.reviews__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @text-color;
+  text-align: center;
+}
+
+.reviews__name {
+  order: -1;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: @subtitle-color;
+  text-align: center;
+}
+
+.reviews__age {
+  display: none;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @text-color;
+  text-align: center;
+}
+
+.reviews__buttons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.reviews__arrows {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__name {
+    order: 0;
+    font-size: 20px;
+  }
+
+  .reviews__age {
+    display: block;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    background: url("../img/icon-quotes.svg") no-repeat 50% 100px;
+  }
+
+  .reviews__buttons {
+    display: none;
+  }
+
+  .reviews__text {
+    max-width: 700px;
+    margin-top: 150px;
+  }
+
+  .reviews__name {
+    font-size: 24px;
+  }
+
+  .reviews__age {
+    font-size: 18px;
+  }
+
+  .reviews__arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -200px;
+    margin-bottom: 150px;
+    min-height: 50px;
+    list-style: none;
+  }
+
+  .reviews__arrows-left {
+    width: 22px;
+    height: 42px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.3;
+    background: url("../img/icon-review-arrow-left.svg") no-repeat 0 0;
+  }
+
+  .reviews__arrows-right {
+    width: 22px;
+    height: 42px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.3;
+    background: url("../img/icon-review-arrow-right.svg") no-repeat 0 0;
+  }
+
+  .reviews__arrows-left:hover,
+  .reviews__arrows-right:hover {
+    opacity: 0.6;
+  }
+
+  .reviews__arrows-left:active,
+  .reviews__arrows-right:active {
+    opacity: 0.1;
+  }
+}
