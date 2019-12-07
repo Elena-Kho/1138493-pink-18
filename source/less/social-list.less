@@ -9,21 +9,39 @@
 }
 
 .social-list__item {
-  min-width: 60px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
 
   &--twitter {
-    background-image: url("../img/icon-twitter.svg");
+    background: url("../img/icon-twitter.svg") no-repeat 20px 20px;
   }
 
   &--facebook {
-    background-image: url("../img/icon-facebook.svg");
+    background: url("../img/icon-facebook.svg") no-repeat 24px 17px;
   }
 
   &--youtube {
-    background-image: url("../img/icon-youtube.svg");
+    background: url("../img/icon-youtube.svg") no-repeat 23px 20px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #283645;
+    border-radius: 50%;
+    opacity: 0.1;
+  }
+}
+
+.social-list__item:hover::before {
+  opacity: 1;
 }
