@@ -29,16 +29,16 @@
   color: @likes-color;
   border: 3px solid rgba(210, 40, 86, 1);
   background: transparent;
-}
 
-.button--upload-yes:hover {
-  color: rgba(255, 255, 255, 1);
-  border: 3px solid rgba(210, 40, 86, 1);
-  background: rgba(210, 40, 86, 1);
-}
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+    border: 3px solid rgba(210, 40, 86, 1);
+    background: rgba(210, 40, 86, 1);
+  }
 
-.button--upload-yes:active {
-  color: rgba(255, 255, 255, 0.3);
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--upload-no {
@@ -47,23 +47,45 @@
   color: rgba(40, 54, 69, 0.1);
   border: 3px solid rgba(40, 54, 69, 0.1);
   background: transparent;
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: rgba(40, 54, 69, 0.3);
+    border: none;
+  }
 }
 
-.button--upload-no:hover {
-  color: rgba(40, 54, 69, 0.3);
-  border: 3px solid rgba(40, 54, 69, 0.3);
-}
-
-.button--upload-no:active {
-  color: rgba(255, 255, 255, 0.3);
-  background: rgba(40, 54, 69, 0.3);
+.button--modal,
+.button--modal-failure {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: @header-color;
+  text-transform: uppercase;
+  background: @button-background;
+  border-radius: 2px;
   border: none;
 }
+
 
 @media (min-width: @desktop-width) {
   .button--upload-yes,
   .button--upload-no {
     width: 185px;
     margin: 0;
+  }
+
+  .button--modal {
+    width: 460px;
+  }
+
+  .button--modal-failure {
+    width: 300px;
   }
 }

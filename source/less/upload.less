@@ -100,6 +100,10 @@
   background-color: @text-background;
   border-radius: 50%;
   cursor: pointer;
+
+  &:active {
+    background-color: @likes-color;
+  }
 }
 
 .upload__line {
@@ -155,7 +159,8 @@
     display: block;
   }
 
-  .upload__edit-item {
+  .upload__edit-item,
+  .upload__edit-item:active {
     background-size: 22px 22px;
   }
 }
@@ -175,7 +180,8 @@
     width: 410px;
   }
 
-  .upload__edit-item {
+  .upload__edit-item,
+  .upload__edit-item:active {
     background-size: 44px 44px;
   }
 

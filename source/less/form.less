@@ -43,24 +43,27 @@
 
 
 .form__userdata {
-  .form-label {
+  .form-input__label {
     padding: 0 20px;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 300;
     color: @likes-color;
-    text-align: left;
-    text-transform: uppercase;
   }
 
-  .form-input {
+  .form-input__input {
     width: 100%;
   }
 }
 
+.form__textarea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .form__button {
   display: block;
-  margin: 0 auto;
+  margin: 0;
+  margin-top: 20px;
   padding: 15px 47px;
   font: inherit;
   font-size: 18px;
@@ -74,11 +77,13 @@
 }
 
 .form__note {
+  display: block;
   font-size: 14px;
   line-height: 30px;
   font-weight: 300;
   color: @text-color;
   text-align: center;
+  order: 1;
 
   span {
     color: @likes-color;
@@ -132,7 +137,7 @@
     display: flex;
     justify-content: space-between;
 
-    .form-label {
+    .form-input__label {
       padding: 0;
       padding-right: 20px;
     }
@@ -143,7 +148,7 @@
     padding-left: 60px;
     padding-right: 60px;
 
-    .form-label {
+    .form-input__label {
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -157,21 +162,16 @@
     display: block;
   }
 
-  .form__textarea {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-
   .form__button {
     width: 300px;
-    margin-left: 20px;
   }
 
   .form__note {
-    order: 1;
-    width: 300px;
+    position: relative;
+    top: -40px;
+    width: 200px;
+    margin-right: 0;
+    text-transform: uppercase;
     text-align: right;
   }
 
@@ -216,7 +216,6 @@
   .form__userdata--contacts {
     width: 375px;
     padding: 0;
-    outline: 1px solid pink;
   }
 
   .form__list {
@@ -228,7 +227,6 @@
 
   .form__item {
     width: 260px;
-    outline: 1px solid pink;
 
     &--chuck {
       order: 1;
