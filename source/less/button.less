@@ -60,7 +60,34 @@
   }
 }
 
-.button--modal,
+.button--form {
+  margin: 0;
+  margin-top: 20px;
+  padding: 15px 47px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: @header-color;
+  text-transform: uppercase;
+  background-color: @button-background;
+  border: none;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @border-color;
+  }
+}
+
+.button--modal-sent,
 .button--modal-failure {
   width: 280px;
   margin: 0 auto;
@@ -71,8 +98,25 @@
   background: @button-background;
   border-radius: 2px;
   border: none;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @border-color;
+  }
 }
 
+@media (min-width: @desktop-width) {
+  .button--form {
+    width: 300px;
+  }
+}
 
 @media (min-width: @desktop-width) {
   .button--upload-yes,
@@ -81,7 +125,7 @@
     margin: 0;
   }
 
-  .button--modal {
+  .button--modal-sent {
     width: 460px;
   }
 

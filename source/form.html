@@ -11,7 +11,7 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper-desktop">
           <div class="main-nav__wrapper container">
-            <a class="main-nav__logo">
+            <a href="index.html" class="main-nav__logo">
               <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Pink">
             </a>
             <button class="main-nav__toggle" type="button" aria-label="Развернуть меню"></button>
@@ -45,11 +45,11 @@
           <fieldset class="form__fieldset form__fieldset--noborder form__user container">
             <p class="form__userdata form-input">
               <label class="form-input__label" for="lastname">Фамилия:</label>
-              <input class="form-input__input" type="text" name="lastname" value="" placeholder="Укажите фамилию *" id="lastname required">
+              <input class="form-input__input" type="text" name="lastname" value="" placeholder="Укажите фамилию *" id="lastname" required>
             </p>
             <p class="form__userdata form-input">
               <label class="form-input__label" for="name">Имя:</label>
-              <input class="form-input__input" type="text" name="name" value="" placeholder="Введите ваше имя *" id="name required">
+              <input class="form-input__input" type="text" name="name" value="" placeholder="Введите ваше имя *" id="name" required>
             </p>
             <p class="form__userdata form-input">
               <label class="form-input__label" for="patronymic">Отчество:</label>
@@ -60,29 +60,29 @@
             <fieldset class="form__fieldset container">
               <legend class="form__legend">Ваши безбашенные <span>достижения в путешествии</span></legend>
               <ul class="form__list">
-                <li class="form__item form__item--selfie form-input">
-                  <input class="form-input__input form-input__input--checkbox visually-hidden" id="selfie" type="checkbox" name="selfie" value="" checked>
-                  <label class="form-input__label form-input__label--checkbox" for="selfie">Сделал селфи с акулой</label>
+                <li class="form__item form__item--selfie form-checkbox">
+                  <input class="form-checkbox__input visually-hidden" id="selfie" type="checkbox" name="selfie" value="" checked>
+                  <label class="form-checkbox__label" for="selfie">Сделал селфи с акулой</label>
                 </li>
-                <li class="form__item form__item--beach form-input">
-                  <input class="form-input__input form-input__input--checkbox visually-hidden" id="beach" type="checkbox" name="beach" value="" checked>
-                  <label class="form-input__label form-input__label--checkbox" for="beach">Обгорел на пляже</label>
+                <li class="form__item form__item--beach form-checkbox">
+                  <input class="form-checkbox__input visually-hidden" id="beach" type="checkbox" name="beach" value="" checked>
+                  <label class="form-checkbox__label" for="beach">Обгорел на пляже</label>
                 </li>
-                <li class="form__item form__item--chuck form-input">
-                  <input class="form-input__input form-input__input--checkbox visually-hidden" id="chuck" type="checkbox" name="chuck" value="">
-                  <label class="form-input__label form-input__label--checkbox" for="chuck">Видел Чака Норриса</label>
+                <li class="form__item form__item--chuck form-checkbox">
+                  <input class="form-checkbox__input visually-hidden" id="chuck" type="checkbox" name="chuck" value="">
+                  <label class="form-checkbox__label" for="chuck">Видел Чака Норриса</label>
                 </li>
-                <li class="form__item form__item--gifts form-input">
-                  <input class="form-input__input form-input__input--checkbox visually-hidden" id="gifts" type="checkbox" name="gifts" value="">
-                  <label class="form-input__label form-input__label--checkbox" for="gifts">Накупил сувениров</label>
+                <li class="form__item form__item--gifts form-checkbox">
+                  <input class="form-checkbox__input visually-hidden" id="gifts" type="checkbox" name="gifts" value="">
+                  <label class="form-checkbox__label form-input__label--checkbox" for="gifts">Накупил сувениров</label>
                 </li>
-                <li class="form__item form__item--tower form-input">
-                  <input class="form-input__input form-input__input--checkbox visually-hidden" id="tower" type="checkbox" name="tower" value="" checked>
-                  <label class="form-input__label form-input__label--checkbox" for="tower">Удержал башню</label>
+                <li class="form__item form__item--tower form-checkbox">
+                  <input class="form-checkbox__input visually-hidden" id="tower" type="checkbox" name="tower" value="" checked>
+                  <label class="form-checkbox__label" for="tower">Удержал башню</label>
                 </li>
-                <li class="form__item form__item--hotel form-input">
-                  <input class="form-input__input form-input__input--checkbox visually-hidden" id="hotel" type="checkbox" name="hotel" value="">
-                  <label class="form-input__label form-input__label--checkbox" for="hotel">Разгромил отель</label>
+                <li class="form__item form__item--hotel form-checkbox">
+                  <input class="form-checkbox__input visually-hidden" id="hotel" type="checkbox" name="hotel" value="">
+                  <label class="form-checkbox__label" for="hotel">Разгромил отель</label>
                 </li>
               </ul>
             </fieldset>
@@ -106,17 +106,17 @@
             <fieldset class="form__fieldset form__fieldset--display container">
               <legend class="form__legend">С каким приложением путешествовали?</legend>
               <ul class="form__list">
-                <li class="form__item form-input">
-                  <input class="form-input__input form-input__input--radio visually-hidden" id="apple" type="radio" name="apple" value="" checked>
-                  <label class="form-input__label form-input__label--radio" for="apple">Pink для iOS</label>
+                <li class="form__item form-radio">
+                  <input class="form-radio__input visually-hidden" id="apple" type="radio" name="apple" value="" checked>
+                  <label class="form-radio__label" for="apple">Pink для iOS</label>
                 </li>
-                <li class="form__item form-input">
-                  <input class="form-input__input form-input__input--radio visually-hidden" id="android" type="radio" name="android" value="">
-                  <label class="form-input__label form-input__label--radio" for="android">Pink на Android</label>
+                <li class="form__item form-radio">
+                  <input class="form-radio__input visually-hidden" id="android" type="radio" name="android" value="">
+                  <label class="form-radio__label" for="android">Pink на Android</label>
                 </li>
-                <li class="form__item form-input">
-                  <input class="form-input__input form-input__input--radio visually-hidden" id="windows" type="radio" name="windows" value="">
-                  <label class="form-input__label form-input__label--radio" for="windows">Windows Phone</label>
+                <li class="form__item form-radio">
+                  <input class="form-radio__input visually-hidden" id="windows" type="radio" name="windows" value="">
+                  <label class="form-radio__label" for="windows">Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
@@ -126,10 +126,10 @@
             <fieldset class="form__fieldset container">
               <legend class="form__legend">Опишите свои эмоции</legend>
               <label class="visually-hidden" for="message">Опишите свои эмоции</label><br>
-              <textarea class="form-input__input form-input__input--area" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях" id="message"></textarea>
+              <textarea class="form__area" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях" id="message"></textarea>
             </fieldset>
             <div class="form__wrapper-button container">
-              <button class="form__button" type="submit">Отправить форму</button>
+              <button class="form__button button button--form" type="submit">Отправить форму</button>
             </div>
           </div>
         </form>
@@ -158,16 +158,14 @@
       </div>
     </footer>
     <section class="popup-sent modal modal--sent container">
-      <h2 class="visually-hidden">Уведомление об успешной отправке сообщения</h2>
-      <p class="modal__heading modal__heading--sent">Ваша заявка отправлена</p>
+      <h2 class="modal__heading modal__heading--sent">Ваша заявка отправлена</h2>
       <p class="modal__note modal__note--sent">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
       <div class="modal__wrapper-button modal__wrapper-button--sent">
-        <button class="modal__button button button--modal" type="submit">Закрыть окно</button>
+        <button class="modal__button button button--modal-sent" type="submit">Закрыть окно</button>
       </div>
     </section>
     <section class="popup-failure modal modal--failure container">
-      <h2 class="visually-hidden">Уведомление, что сообщение не отправвлено</h2>
-      <p class="modal__heading modal__heading--failure">Что-то пошло не так!</p>
+      <h2 class="modal__heading modal__heading--failure">Что-то пошло не так!</h2>
       <p class="modal__note">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <div class="modal__wrapper-button modal__wrapper-button--failure">
         <button class="modal__button button button--modal-failure" type="submit">Ок</button>
