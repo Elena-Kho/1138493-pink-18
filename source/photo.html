@@ -11,7 +11,7 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper-desktop">
           <div class="main-nav__wrapper container">
-            <a class="main-nav__logo">
+            <a href="index.html" class="main-nav__logo">
               <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Pink">
             </a>
             <button class="main-nav__toggle" type="button" aria-label="Развернуть меню"></button>
@@ -34,86 +34,124 @@
       </nav>
     </header>
     <main class="page-photo">
-        <div class="page-photo__wrapper">
-          <h1 class="page-photo__heading heading">Фотографии пользователей</h1>
+      <div class="page-photo__wrapper">
+        <h1 class="page-photo__heading heading">Фотографии пользователей</h1>
+      </div>
+      <section class="gallery">
+        <div class="gallery__wrapper-slogan slogan">
+            <p class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
-        <section class="gallery">
-          <div class="gallery__wrapper-slogan slogan">
-              <p class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          </div>
+        <div class="gallery__wrapper-panorama">
+          <p class="gallery__sign container">Панорама дня</p>
           <a href="#">
             <img class="gallery__photo" src="img/panorama-desktop@1x.jpg" width="320" height="137" alt="Фото пользователя Анна">
           </a>
-          <ul class="gallery__list container">
-            <li class="gallery__item user-photo">
-              <div class="user-photo__wrapper">
-                <p class="user-photo__name"><b>Анна</b> <span>(5 минут назад)</span></p>
-                <p class="user-photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои <span>вопросы!</span></p>
-                <button class="user-photo__likes" type="button">Нравится: 215</button>
-              </div>
-            </li>
-            <li class="gallery__item user-photo">
-              <a href="#">
-                <img class="user-photo__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Левон">
-              </a>
-              <div class="user-photo__wrapper">
-                <p class="user-photo__name"><b>Левон</b> <span>(5 часов назад)</span></p>
-                <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <button class="user-photo__likes" type="button">Нравится: 356</button>
-              </div>
-            </li>
-            <li class="gallery__item user-photo">
-              <a href="#">
-                <img class="user-photo__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Антон">
-              </a>
-              <div class="user-photo__wrapper">
-                <p class="user-photo__name"><b>Антон</b> <span>(12 часов назад)</span></p>
-                <p class="user-photo__text">Соседи будут рады!</p>
-                <button class="user-photo__likes" type="button">Нравится: 666</button>
-              </div>
-            </li>
-            <li class="gallery__item user-photo">
-              <a href="#">
-                <img class="user-photo__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Борис">
-              </a>
-              <div class="user-photo__wrapper">
-                <p class="user-photo__name"><b>Борис</b> <span>(20 часов назад)</span></p>
-                <p class="user-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <button class="user-photo__likes" type="button">Нравится: 215</button>
-              </div>
-            </li>
-            <li class="gallery__item user-photo">
-              <a href="#">
-                <img class="user-photo__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Сергей">
-              </a>
-              <div class="user-photo__wrapper">
-                <p class="user-photo__name"><b>Сергей</b> <span>(25 часов назад)</span></p>
-                <p class="user-photo__text">Самая кубанская в мире!</p>
-                <button class="user-photo__likes" type="button">Нравится: 4</button>
-              </div>
-            </li>
-            <li class="gallery__item user-photo">
-              <a href="#">
-                <img class="user-photo__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Максим">
-              </a>
-              <div class="user-photo__wrapper">
-                <p class="user-photo__name"><b>Максим</b> <span>(40 часов назад)</span></p>
-                <p class="user-photo__text">Где снег-то?</p>
-                <button class="user-photo__likes" type="button">Нравится: 150</button>
-              </div>
-            </li>
-            <li class="gallery__item user-photo">
-              <a href="#">
-                <img class="user-photo__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Надежда">
-              </a>
-              <div class="user-photo__wrapper">
-                <p class="user-photo__name"><b>Надежда</b> <span>(45 часов назад)</span></p>
-                <p class="user-photo__text">Всем GM и взаимные лайки!</p>
-                <button class="user-photo__likes" type="button">Нравится: 2560</button>
-              </div>
-            </li>
-          </ul>
-        </section>
+          </div>
+        <ul class="gallery__list container">
+          <li class="gallery__item user-photo">
+            <div class="user-photo__wrapper user-photo__wrapper--panorama">
+              <p class="user-photo__name"><b>Анна</b> <span>(5 минут назад)</span></p>
+              <p class="user-photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои <span>вопросы!</span></p>
+              <button class="user-photo__likes" type="button">Нравится: 215</button>
+            </div>
+          </li>
+          <li class="gallery__item user-photo">
+            <a href="#">
+              <img class="user-photo__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Левон">
+            </a>
+            <div class="user-photo__wrapper">
+              <p class="user-photo__name"><b>Левон</b> <span>(5 часов назад)</span></p>
+              <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <button class="user-photo__likes" type="button">Нравится: 356</button>
+            </div>
+          </li>
+          <li class="gallery__item user-photo">
+            <a href="#">
+              <img class="user-photo__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Антон">
+            </a>
+            <div class="user-photo__wrapper">
+              <p class="user-photo__name"><b>Антон</b> <span>(12 часов назад)</span></p>
+              <p class="user-photo__text">Соседи будут рады!</p>
+              <button class="user-photo__likes" type="button">Нравится: 666</button>
+            </div>
+          </li>
+          <li class="gallery__item user-photo">
+            <a href="#">
+              <img class="user-photo__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Борис">
+            </a>
+            <div class="user-photo__wrapper">
+              <p class="user-photo__name"><b>Борис</b> <span>(20 часов назад)</span></p>
+              <p class="user-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <button class="user-photo__likes" type="button">Нравится: 215</button>
+            </div>
+          </li>
+          <li class="gallery__item user-photo">
+            <a href="#">
+              <img class="user-photo__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Сергей">
+            </a>
+            <div class="user-photo__wrapper">
+              <p class="user-photo__name"><b>Сергей</b> <span>(25 часов назад)</span></p>
+              <p class="user-photo__text">Самая кубанская в мире!</p>
+              <button class="user-photo__likes" type="button">Нравится: 4</button>
+            </div>
+          </li>
+          <li class="gallery__item user-photo">
+            <a href="#">
+              <img class="user-photo__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Максим">
+            </a>
+            <div class="user-photo__wrapper">
+              <p class="user-photo__name"><b>Максим</b> <span>(40 часов назад)</span></p>
+              <p class="user-photo__text">Где снег-то?</p>
+              <button class="user-photo__likes" type="button">Нравится: 150</button>
+            </div>
+          </li>
+          <li class="gallery__item user-photo">
+            <a href="#">
+              <img class="user-photo__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Надежда">
+            </a>
+            <div class="user-photo__wrapper">
+              <p class="user-photo__name"><b>Надежда</b> <span>(45 часов назад)</span></p>
+              <p class="user-photo__text">Всем GM и взаимные лайки!</p>
+              <button class="user-photo__likes" type="button">Нравится: 2560</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="upload">
+        <h2 class="visually-hidden">Обработка и загрузка фото</h2>
+        <p class="upload__note container">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="upload__background">
+          <div class="upload__wrapper">
+            <a href="#">
+              <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото для обработки">
+            </a>
+            <ul class="upload__edit-list">
+              <li><button class="upload__edit-item upload__edit-item--crop" type="button" aria-label="Обрезка"></button></li>
+              <li class="upload__item upload__item--off">
+                <div class="upload__range">
+                <div class="upload__toggle"></div>
+              </li>
+              <li class="upload__line upload__line--off"></li>
+              <li><button class="upload__edit-item upload__edit-item--fill" type="button" aria-label="Заливка"></button></li>
+              <li class="upload__item upload__item--off">
+                <div class="upload__range">
+                <div class="upload__toggle"></div>
+              </li>
+              <li class="upload__line upload__line--off"></li>
+              <li><button class="upload__edit-item upload__edit-item--contrast" type="button" aria-label="Контрастность"></button></li>
+              <li class="upload__item">
+                <div class="upload__range">
+                <div class="upload__toggle"></div>
+              </li>
+              <li class="upload__line"></li>
+            </ul>
+            <div class="upload__wrapper-buttons">
+              <button class="upload__button button button--upload-yes" type="submit">Запостить</button>
+              <button class="upload__button button button--upload-no" type="submit">Отмена</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="page-footer container">
       <a class="page-footer__logo" href="index.html">

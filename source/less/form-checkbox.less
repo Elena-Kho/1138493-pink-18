@@ -1,0 +1,36 @@
+.form-checkbox__label {
+  position: relative;
+  display: block;
+  padding-left: 70px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+  color: @text-color;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-checkbox__input + label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: @text-background;
+  border: 2px solid @border-color;
+}
+
+.form-checkbox__input:checked + label::before {
+  background: @text-background url("../img/icon-check.svg") no-repeat 50% 50%;
+}
+
+.form-checkbox__input:hover + label::before {
+  border: 2px solid @text-color;
+}
+
+.form-checkbox__input:active + label::before {
+  border: 2px solid @likes-color;
+}

@@ -1,4 +1,4 @@
-.form-input {
+.form-input__input {
   box-sizing: border-box;
   padding: 10px 20px;
   font: inherit;
@@ -9,25 +9,64 @@
   border: 2px solid  @border-color;
   border-radius: 3px;
 
-  &--area {
-    width: 100%;
-    height: 200px;
-    resize: none;
+  &:hover {
+    border: 2px solid  @text-color;
+  }
+
+  &:active {
+    border: 2px solid  @likes-color;
   }
 }
 
+.form-input__label {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+  color: @text-color;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+}
+
 @media (min-width: @tablet-width) {
-  .form-input--area {
-    width: 496px;
-    height: 200px;
-    margin: 20px 60px;
+  .form__userdata--contacts {
+    pisition: relative;
+  }
+
+  .form-input__input--mobile {
+    background: transparent;
+  }
+
+  .form-input__background {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    margin-top: -118px;
+    margin-left: 501px;
+    border-radius: 2px;
+    background: @border-color;
+
+    &--mobile {
+      background: @border-color url("../img/icon-phone.svg") no-repeat 50% 50%;
+    }
+
+    &--email {
+      background: @border-color url("../img/icon-mail.svg") no-repeat 50% 50%;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .form-input--area {
-    width: 820px;
-    height: 127px;
-    margin: 20px 60px;
+  .form-input__background {
+    margin-top: 16px;
+
+    &--mobile {
+      margin-left: 320px;
+    }
+
+    &--email {
+      margin-left: 740px;
+    }
   }
 }

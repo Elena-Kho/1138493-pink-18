@@ -6,7 +6,7 @@
   font-weight: 700;
   text-decoration: none;
   text-align: center;
-  border: 2px solid white;
+  border: 3px solid #ffffff;
   border-radius: 50px;
 }
 
@@ -20,5 +20,116 @@
 
   &:active {
     color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.button--upload-yes {
+  width: 280px;
+  margin: 10px auto;
+  color: @likes-color;
+  border: 3px solid rgba(210, 40, 86, 1);
+  background: transparent;
+
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+    border: 3px solid rgba(210, 40, 86, 1);
+    background: rgba(210, 40, 86, 1);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--upload-no {
+  width: 280px;
+  margin: 10px auto;
+  color: rgba(40, 54, 69, 0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  background: transparent;
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: rgba(40, 54, 69, 0.3);
+    border: none;
+  }
+}
+
+.button--form {
+  margin: 0;
+  margin-top: 20px;
+  padding: 15px 47px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: @header-color;
+  text-transform: uppercase;
+  background-color: @button-background;
+  border: none;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @border-color;
+  }
+}
+
+.button--modal-sent,
+.button--modal-failure {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: @header-color;
+  text-transform: uppercase;
+  background: @button-background;
+  border-radius: 2px;
+  border: none;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @border-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button--form {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button--upload-yes,
+  .button--upload-no {
+    width: 185px;
+    margin: 0;
+  }
+
+  .button--modal-sent {
+    width: 460px;
+  }
+
+  .button--modal-failure {
+    width: 300px;
   }
 }

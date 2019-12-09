@@ -1,0 +1,38 @@
+.form-radio__label {
+  position: relative;
+  display: block;
+  padding-left: 70px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+  color: @text-color;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-radio__input + label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: @text-background;
+  border: 10px solid @header-color;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px @border-color;
+}
+
+.form-radio__input:checked + label::before {
+  background-color: @likes-color;
+}
+
+.form-radio__input:hover + label::before {
+  box-shadow: 0 0 0 2px @text-color;
+}
+
+.form-radio__input:active + label::before {
+  box-shadow: 0 0 0 2px @likes-color;
+}
