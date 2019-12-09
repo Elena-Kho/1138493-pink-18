@@ -97,12 +97,30 @@
     margin: 20px 60px;
   }
 
-  .form-input__input--mobile {
-    background: url("../img/icon-phone.svg") no-repeat 97% 50%;
+  .form__userdata--contacts {
+    pisition: relative;
   }
 
-  .form-input__input--email {
-    background: url("../img/icon-mail.svg") no-repeat 97% 50%;
+  .form-input__input--mobile {
+    background: transparent;
+  }
+
+  .form-input__background {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    margin-top: -118px;
+    margin-left: 501px;
+    border-radius: 2px;
+    background: @border-color;
+
+    &--mobile {
+      background: @border-color url("../img/icon-phone.svg") no-repeat 50% 50%;
+    }
+
+    &--email {
+      background: @border-color url("../img/icon-mail.svg") no-repeat 50% 50%;
+    }
   }
 }
 
@@ -111,5 +129,17 @@
     width: 820px;
     height: 127px;
     margin: 20px 60px;
+  }
+
+  .form-input__background {
+    margin-top: 16px;
+
+    &--mobile {
+      margin-left: 320px;
+    }
+
+    &--email {
+      margin-left: 740px;
+    }
   }
 }
