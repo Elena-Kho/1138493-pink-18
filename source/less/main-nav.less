@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 22px;
   border-top: 1px solid @menu-border-light;
   border-bottom: 1px solid @menu-border-dark;
@@ -17,6 +17,28 @@
 .main-nav__logo-image {
   display: block;
   padding: 0;
+  margin-left: -50px;
+
+  .star,
+  .glasses {
+    display: none;
+  }
+
+  &:hover {
+    path {
+      fill: @likes-color;
+    }
+  }
+
+  &:active {
+    path {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.main-nav__toggle {
+  margin-top: 20px;
 }
 
 .main-nav__list {
@@ -106,6 +128,11 @@
   .main-nav__logo-image {
     width: 147px;
     height: 41px;
+    margin-left: 0;
+
+    .glasses {
+      display: block;
+    }
   }
 }
 
@@ -138,5 +165,11 @@
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__logo-image {
+    .star {
+      display: block;
+    }
   }
 }

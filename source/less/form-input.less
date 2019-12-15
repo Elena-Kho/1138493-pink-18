@@ -30,28 +30,24 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form__userdata--contacts {
+  .form-input {
     pisition: relative;
   }
 
-  .form-input__input--mobile {
-    background: transparent;
-  }
-
   .form-input__background {
+    display: block;
     position: absolute;
-    width: 53px;
-    height: 53px;
-    margin-top: -118px;
-    margin-left: 501px;
+    width: 43px;
+    height: 43px;
     border-radius: 2px;
-    background: @border-color;
 
     &--mobile {
+      margin-left: 451px;
       background: @border-color url("../img/icon-phone.svg") no-repeat 50% 50%;
     }
 
     &--email {
+      margin-left: 451px;
       background: @border-color url("../img/icon-mail.svg") no-repeat 50% 50%;
     }
   }
@@ -59,14 +55,12 @@
 
 @media (min-width: @desktop-width) {
   .form-input__background {
-    margin-top: 16px;
-
     &--mobile {
-      margin-left: 320px;
+      margin-left: 330px;
     }
 
     &--email {
-      margin-left: 740px;
+      margin-left: 330px;
     }
   }
 }

@@ -11,6 +11,30 @@
   }
 }
 
+.page-footer__logo {
+  .star {
+    display: none;
+  }
+}
+
+.page-footer__logo:hover {
+  .letters {
+    path {
+      fill: @likes-color;
+    }
+  }
+}
+
+.page-footer__logo:active {
+  opacity: 0.3;
+
+  .letters {
+    path {
+      fill: @text-color;
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
     flex-direction: row;
@@ -18,6 +42,14 @@
 
     &--index {
       display: flex;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__logo {
+    .star {
+      display: block;
     }
   }
 }
