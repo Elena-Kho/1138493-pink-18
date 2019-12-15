@@ -8,8 +8,20 @@
   color: @text-color;
 }
 
-.copyright__logo img {
+.copyright__logo svg {
   display: block;
+}
+
+.copyright__logo svg:hover {
+  path {
+    fill: @text-color;
+  }
+}
+
+.copyright__logo svg:active {
+  path {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
