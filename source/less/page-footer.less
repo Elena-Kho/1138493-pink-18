@@ -17,21 +17,19 @@
   }
 }
 
-.page-footer__logo:hover {
-  .letters {
-    path {
-      fill: @likes-color;
-    }
+.page-footer__logo:hover .letters {
+  path {
+    fill: @likes-color;
   }
 }
 
 .page-footer__logo:active {
   opacity: 0.3;
+}
 
-  .letters {
-    path {
-      fill: @text-color;
-    }
+.page-footer__logo:active .letters {
+  path {
+    fill: @text-color;
   }
 }
 
@@ -39,17 +37,15 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
+  }
 
-    &--index {
-      display: flex;
-    }
+  .page-footer--index {
+    display: flex;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer__logo {
-    .star {
-      display: block;
-    }
+  .page-footer__logo .star {
+    display: block;
   }
 }

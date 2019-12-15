@@ -23,17 +23,17 @@
   .glasses {
     display: none;
   }
+}
 
-  &:hover {
-    path {
-      fill: @likes-color;
-    }
+.main-nav__logo-image:hover {
+  path {
+    fill: @likes-color;
   }
+}
 
-  &:active {
-    path {
-      fill: rgba(255, 255, 255, 0.3);
-    }
+.main-nav__logo-image:active {
+  path {
+    fill: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -129,10 +129,10 @@
     width: 147px;
     height: 41px;
     margin-left: 0;
+  }
 
-    .glasses {
-      display: block;
-    }
+  .main-nav__logo-image .glasses {
+    display: block;
   }
 }
 
@@ -167,9 +167,7 @@
     display: none;
   }
 
-  .main-nav__logo-image {
-    .star {
-      display: block;
-    }
+  .main-nav__logo-image .star {
+    display: block;
   }
 }
