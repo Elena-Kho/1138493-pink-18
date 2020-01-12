@@ -1,5 +1,6 @@
 .page-footer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
@@ -15,6 +16,7 @@
   .star {
     display: none;
   }
+  margin-bottom: 38px;
 }
 
 .page-footer__logo:hover .letters {
@@ -37,15 +39,37 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .page-footer__logo {
+    margin-top: 5px;
   }
 
   .page-footer--index {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer {
+    margin-bottom: 40px;
+  }
+
+  .page-footer__logo {
+    margin-right: 20px;
+  }
+
   .page-footer__logo .star {
     display: block;
+  }
+
+  .page-footer--photo,
+  .page-footer--form {
+    .social-list {
+      margin-left: -5px;
+    }
   }
 }

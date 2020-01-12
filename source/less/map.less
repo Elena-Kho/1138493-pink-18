@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 200px;
+  height: 200px;
   margin: 0;
 
   &::before {
@@ -17,7 +17,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 123px;
+    height: 123px;
     background: url("../img/bg-triangle-white-footer.svg") no-repeat 50% 0;
     background-size: contain;
   }
@@ -25,19 +25,35 @@
 
 .map__iframe {
   width: 100%;
-  min-height: auto;
+  height: 200px;
   padding: 0;
   border: none;
 }
 
 @media (min-width: @tablet-width) {
+  .map {
+    margin-bottom: 30px;
+  }
+
+  .map__wrapper {
+    height: 374px;
+  }
+
   .map__iframe {
-    min-height: 375px;
+    height: 374px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .map {
+    margin-bottom: 65px;
+  }
+
+  .map__wrapper {
+    height: 502px;
+  }
+
   .map__iframe {
-    min-height: 500px;
+    height: 502px;
   }
 }

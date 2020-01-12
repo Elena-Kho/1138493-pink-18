@@ -1,24 +1,29 @@
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
+  width: 260px;
+  margin: 0;
+  margin-bottom: 33px;
   padding: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
   list-style: none;
+  text-align: center;
 }
 
 .social-list__item {
   position: relative;
   top: 0;
   left: 0;
-  width: 50px;
-  height: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 45px;
+  height: 45px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
   cursor: pointer;
+
+  &:nth-child(2n) {
+    margin-left: 11px;
+    margin-right: 11px;
+  }
 
   &:hover {
     border: 3px solid rgba(40, 54, 69, 1);
@@ -36,7 +41,7 @@
     z-index: 2;
     width: 50px;
     height: 50px;
-    background: url("../img/icon-social-twitter.svg") no-repeat 20px 20px;
+    background: url("../img/icon-social-twitter.svg") no-repeat 16px 17px;
   }
 
   &--facebook::before {
@@ -47,7 +52,7 @@
     z-index: 2;
     width: 50px;
     height: 50px;
-    background: url("../img/icon-social-facebook.svg") no-repeat 20px 20px;
+    background: url("../img/icon-social-facebook.svg") no-repeat 16px 18px;
   }
 
   &--youtube::before {
@@ -58,12 +63,43 @@
     z-index: 2;
     width: 50px;
     height: 50px;
-    background: url("../img/icon-social-youtube.svg") no-repeat 20px 20px;
+    background: url("../img/icon-social-youtube.svg") no-repeat 18px 18px;
   }
 
   &--twitter:active::before,
   &--facebook:active::before,
   &--youtube:active::before {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social-list {
+    margin-top: 5px;
+    margin-left: -20px;
+  }
+
+  .social-list__item {
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
+
+    &--twitter::before {
+      background-position: 15px 16px;
+    }
+
+    &--facebook::before {
+      background-position: 15px 15px;
+    }
+
+    &--youtube::before {
+      background-position: 19px 16px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social-list {
+    margin-left: -15px;
   }
 }

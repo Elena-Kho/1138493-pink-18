@@ -15,13 +15,13 @@
 
 .user-photo__wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 90px;
-  padding: 15px 20px;
+  min-height: 80px;
+  padding: 18px 18px;
   text-align: left;
   background-color: @photo-background;
-  outline: 1px solid pink;
 }
 
 .user-photo__image {
@@ -36,6 +36,10 @@
   font-weight: 700;
   color: @text-color;
   text-align: left;
+
+  &--nadezhda {
+    padding-top: 2px;
+  }
 }
 
 .user-photo__name span {
@@ -53,15 +57,11 @@
   font-weight: 400;
   color: @text-color;
   text-align: left;
-
-  span {
-    display: none;
-  }
 }
 
 .user-photo__likes {
   display: block;
-  margin-top: 20px;
+  margin-top: 9px;
   padding-left: 30px;
   font-size: 12px;
   line-height: 24px;
@@ -71,7 +71,6 @@
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-  outline: 1px solid pink;
   background: transparent url("../img/icon-heart.svg") no-repeat 0 5px;
 }
 
@@ -79,6 +78,7 @@
 @media (min-width: @tablet-width) {
   .user-photo:not(:first-child) {
     width: 300px;
+    margin-bottom: 22px;
   }
 
   .user-photo:first-child {
@@ -90,28 +90,55 @@
   }
 
   .user-photo__wrapper {
-    min-height: 120px;
+    justify-content: flex-start;
+    min-height: 111px;
     margin: 0;
+    padding-top: 24px;
+    padding-left: 27px;
+
+    .user-photo__likes {
+      margin-top: auto;
+      background-position: 229px 6px;
+    }
   }
 
   .user-photo__wrapper--panorama {
     position: relative;
+    min-height: 80px;
+    margin-bottom: 30px;
+    padding-top: 22px;
 
     .user-photo__likes {
       position: absolute;
-      right: 20px;
-      top: 0;
+      right: 19px;
+      top: 23px;
       z-index: 1;
       width: 130px;
+      background-position: 107px 6px;
     }
-  }
 
-  .user-photo__text span {
-    display: block;
+    .user-photo__text {
+      padding-bottom: 7px;
+    }
   }
 
   .user-photo__likes {
     padding-left: 0;
-    background-position: 100% 5px;
+    background-position: 107px 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-photo__wrapper--panorama {
+    min-height: 50px;
+    margin-bottom: 0;
+  }
+
+  .user-photo:first-child {
+    margin-bottom: 50px;
+  }
+
+  .user-photo:not(:first-child) {
+    margin-bottom: 55px;
   }
 }

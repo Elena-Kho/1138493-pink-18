@@ -11,6 +11,7 @@
 }
 
 .button--downloads {
+  padding: 15px 0;
   color: @header-color;
 
   &:hover {
@@ -25,7 +26,8 @@
 
 .button--upload-yes {
   width: 280px;
-  margin: 10px auto;
+  margin: 0 auto;
+  margin-bottom: 15px;
   color: @likes-color;
   border: 3px solid rgba(210, 40, 86, 1);
   background: transparent;
@@ -43,7 +45,7 @@
 
 .button--upload-no {
   width: 280px;
-  margin: 10px auto;
+  margin: 0 auto;
   color: rgba(40, 54, 69, 0.1);
   border: 3px solid rgba(40, 54, 69, 0.1);
   background: transparent;
@@ -55,14 +57,14 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    background: rgba(40, 54, 69, 0.3);
-    border: none;
+    background: rgba(40, 54, 69);
+    border: 3px solid rgba(40, 54, 69);
+    opacity: 0.3;
   }
 }
 
 .button--form {
   margin: 0;
-  margin-top: 20px;
   padding: 15px 47px;
   font: inherit;
   font-size: 18px;
@@ -91,8 +93,8 @@
 .button--modal-failure {
   width: 280px;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   color: @header-color;
   text-transform: uppercase;
   background: @button-background;
@@ -112,13 +114,35 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
+  .button--upload-yes,
+  .button--upload-no {
+    width: 260px;
+    margin: 0;
+  }
+
+  .button--upload-yes {
+    margin-bottom: 25px;
+  }
+
   .button--form {
+    margin-top: 67px;
+    padding: 16px 58px;
+  }
+
+  .button--modal-sent,
+  .button--modal-failure {
     width: 300px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .button--form {
+    width: 300px;
+    margin-top: 65px;
+    padding: 15px 47px;
+  }
+
   .button--upload-yes,
   .button--upload-no {
     width: 185px;
@@ -131,5 +155,9 @@
 
   .button--modal-failure {
     width: 300px;
+  }
+
+  .button--downloads {
+    font-size: 21px;
   }
 }

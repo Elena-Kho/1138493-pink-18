@@ -13,45 +13,62 @@
   &--sent {
     display: none;
     width: 320px;
-    height: 350px;
+    height: 380px;
   }
 
   &--failure {
     display: none;
     width: 320px;
-    height: 290px;
+    height: 288px;
   }
 }
 
 .modal__wrapper-button {
   width: 320px;
-  height: 100px;
-  margin-top: 50px;
-  padding-top: 45px;
 
   &--sent {
+    margin-top: 33px;
+    padding-top: 47px;
+    padding-bottom: 53px;
     background-color: @photo-background;
   }
 
   &--failure {
-    padding-top: 0;
+    padding-top: 40px;
   }
 }
 
 .modal__heading {
   width: 280px;
-  margin: 20px auto;
-  padding-top: 20px;
+  margin: 0 auto;
   font-size: 18px;
   font-weight: 700;
   color: @subtitle-color;
+
+  &--sent {
+    padding-top: 40px;
+    padding-bottom: 15px;
+  }
+
+  &--failure {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
 }
 
 .modal__note {
   width: 280px;
-  margin: 10px auto;
+  margin: 0 auto;
   font-weight: 300;
   color: @text-color;
+}
+
+.modal__note--sent {
+  padding-top: 10px;
+
+  span {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -62,11 +79,11 @@
     border-radius: 3px;
 
     &--sent {
-      height: 410px;
+      height: 430px;
     }
 
     &--failure {
-      height: 350px;
+      height: 355px;
     }
   }
 
@@ -82,21 +99,34 @@
 
     &--failure {
       width: 250px;
+      padding-top: 30px;
+      padding-bottom: 20px;
     }
   }
 
   .modal__note {
     width: 300px;
     margin: 0 auto;
-    padding-top: 20px;
     font-size: 18px;
     line-height: 24px;
   }
 
+  .modal__note--sent {
+    padding-top: 8px;
+
+    span {
+      display: inline;
+    }
+  }
+
   .modal__wrapper-button {
     margin: 0 auto;
-    margin-top: 50px;
     width: 460px;
+
+    &--sent {
+      margin-top: 35px;
+      padding-bottom: 50px;
+    }
   }
 }
 
@@ -106,30 +136,47 @@
     width: 780px;
 
     &--sent {
-      height: 345px;
+      height: 375px;
     }
 
     &--failure {
-      height: 350px;
+      height: 370px;
     }
   }
 
   .modal__wrapper-button {
     margin: 0 auto;
-    margin-top: 50px;
     width: 780px;
 
+    &--sent {
+      margin-top: 40px;
+      padding-bottom: 55px;
+    }
+
     &--failure {
+      margin-top: 60px;
       padding-top: 50px;
+      padding-bottom: 50px;
       background-color: @photo-background;
     }
   }
 
   .modal__heading {
     width: 400px;
+
+    &--failure {
+      padding-top: 35px;
+      padding-bottom: 25px;
+    }
   }
 
-  .modal__note--sent {
-    width: 400px;
+  .modal__note {
+    width: 360px;
+    font-weight: 400;
+
+    &--sent {
+      width: 420px;
+      padding-top: 5px;
+    }
   }
 }
