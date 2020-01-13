@@ -1,13 +1,17 @@
+.form-checkbox {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .form-checkbox__label {
   position: relative;
   display: block;
   padding-left: 70px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
   color: @text-color;
   text-align: left;
-  text-transform: uppercase;
   cursor: pointer;
   user-select: none;
 }
@@ -33,4 +37,10 @@
 
 .form-checkbox__input:active + label::before {
   border: 2px solid @likes-color;
+}
+
+@media (min-width: @tablet-width) {
+  .form-checkbox__label {
+    padding-left: 58px;
+  }
 }

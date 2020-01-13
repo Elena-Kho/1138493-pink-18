@@ -1,10 +1,14 @@
 .contacts {
   margin: 0 auto;
   padding: 0;
+  padding-top: 40px;
+  padding-bottom: 35px;
   background: @text-background;
 }
 
 .contacts__heading {
+  margin: 0 auto;
+  margin-bottom: 30px;
   font-size: 24px;
   line-height: 32px;
   font-weight: 300;
@@ -13,6 +17,7 @@
 }
 
 .contacts__paragraph {
+  margin: 0 auto;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -28,10 +33,34 @@
   color: @likes-color;
 }
 
+.contacts__paragraph--call .contacts__details a {
+  text-decoration: none;
+  color: @likes-color;
+}
+
+.contacts__paragraph--call .contacts__details {
+  margin-bottom: 19px;
+}
+
+.contacts__paragraph--email .contacts__details {
+  margin-top: 2px;
+  margin-bottom: 23px;
+}
+
 .contacts__details--email {
   &:hover {
+    position: relative;
     color: @text-color;
-    text-decoration: underline;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 20px;
+      bottom: 2px;
+      width: 240px;
+      height: 2px;
+      background: @text-color;
+    }
   }
 
   &:active {
@@ -42,9 +71,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    padding-bottom: 25px;
+  }
+
   .contacts__heading {
+    padding-top: 5px;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 49px;
 
     span {
       display: block;
@@ -52,28 +86,75 @@
   }
 
   .contacts__paragraph {
-    width: 300px;
-
-    &--address {
-      width: 250px;
-    }
+    width: 280px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    padding: 0;
   }
 
   .contacts__wrapper-paragraph {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0;
+  }
+
+  .contacts__paragraph--call {
+    margin-left: 10px;
+
+    span {
+      margin: 0;
+      padding-top: 3px;
+    }
+  }
+
+  .contacts__paragraph--email {
+    margin-left: 30px;
+  }
+
+  .contacts__paragraph--address {
+    width: 250px;
+    margin-bottom: 0;
+
+    span {
+      margin: 0;
+      padding-top: 5px;
+      line-height: 30px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .contacts {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+
+  .contacts__heading {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
   .contacts__paragraph {
+    margin-top: 27px;
+
     &--email {
       order: 1;
+      margin-right: 10px;
+      margin-left: 55px;
     }
 
     &--address {
       order: 0;
+      margin-right: 0;
     }
+
+    span {
+      padding-top: 23px;
+    }
+  }
+
+  .contacts__paragraph--call {
+    margin-right: 38px;
   }
 }

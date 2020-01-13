@@ -2,12 +2,11 @@
   margin-top: -80px;
   color: @header-color;
   text-align: center;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  background: @background url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
   background-size: cover;
 
   @media (min-resolution: @retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: cover;
+    background: @background url("../img/bg-back-mobile@2x.jpg") no-repeat 50% 0;
   }
 }
 
@@ -17,8 +16,8 @@
 }
 
 .downloads__slogan {
-  padding-top: 83px;
-  padding-bottom: 315px;
+  padding-top: 100px;
+  padding-bottom: 310px;
   font-size: 24px;
   line-height: 32px;
   font-weight: 300;
@@ -38,15 +37,17 @@
 }
 
 .downloads__list {
-  margin-top: 30px;
-  margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 35px;
+  margin-bottom: 20px;
   list-style: none;
 }
 
 .downloads__note {
+  padding-bottom: 18px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -55,15 +56,15 @@
 
 .downloads__link {
   display: block;
-  margin-left: 15px;
-  margin-right: 20px;
+  margin-left: 17px;
+  margin-right: 19px;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
 
   &--apple {
-    width: 46px;
+    width: 47px;
     height: 57px;
     background-image: url("../img/logo-apple.svg");
   }
@@ -84,11 +85,11 @@
 @media (min-width: @tablet-width) {
   .downloads {
     margin-top: -125px;
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
+    background: @background url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
+    background-size: cover;
 
     @media (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1200px 729px;
+      background: @background url("../img/bg-back-tablet@2x.jpg") no-repeat 50% 0;
     }
   }
 
@@ -96,7 +97,7 @@
     width: 620px;
     margin: 0 auto;
     padding: 0 20px;
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat 40% 100%;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat 45% 100%;
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png");
@@ -107,37 +108,41 @@
   .downloads__slogan {
     width: 220px;
     margin: 0;
-    padding-top: 200px;
+    padding-top: 219px;
     padding-bottom: 15px;
+    padding-left: 40px;
     font-size: 40px;
-    line-height: 45px;
+    line-height: 47px;
     font-weight: 300;
     background: transparent;
   }
 
   .downloads__wrapper-app {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    padding-top: 17px;
     background: transparent;
   }
 
   .downloads__app-store {
-    width: 300px;
+    width: 296px;
     margin: 0;
   }
 
   .downloads__list {
     width: 300px;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: 0;
     padding: 0;
   }
 
   .downloads__note {
     width: 300px;
-    margin-left: 0;
     margin-top: 15px;
-    margin-bottom: 85px;
+    margin-bottom: 80px;
+    margin-left: 0;
+    padding-left: 0;
     font-size: 18px;
     line-height: 24px;
     font-weight: 300;
@@ -147,11 +152,11 @@
 @media (min-width: @desktop-width) {
   .downloads {
     margin-top: -125px;
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
+    background: @background url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
+    background-size: cover;
 
     @media (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: 2560px 853px;
+      background: @background url("../img/bg-back-desktop@2x.jpg") no-repeat 50% 0;
     }
   }
 
@@ -167,19 +172,20 @@
     }
   }
 
+  .downloads__wrapper-app {
+    padding-bottom: 15px;
+  }
+
   .downloads__slogan {
     width: 240px;
     margin: 0;
-    padding-bottom: 20px;
+    padding-top: 232px;
+    padding-bottom: 35px;
     padding-left: 30px;
     padding-right: 30px;
     font-size: 50px;
     line-height: 60px;
     font-weight: 300;
-  }
-
-  .downloads__app-store {
-    font-size: 21px;
   }
 
   .downloads__list {
@@ -188,9 +194,9 @@
 
   .downloads__note {
     width: 300px;
-    margin-left: 0;
-    margin-top: 25px;
+    margin-top: 30px;
     margin-bottom: 110px;
+    padding: 0;
     font-size: 18px;
     line-height: 24px;
     font-weight: 300;
