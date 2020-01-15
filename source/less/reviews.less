@@ -13,6 +13,8 @@
 }
 
 .reviews__text {
+  display: block;
+  width: 280px;
   margin: 0;
   padding-bottom: 30px;
   font-size: 14px;
@@ -72,8 +74,9 @@
   }
 
   .reviews__text {
-    font-size: 18px;
+    width: 620px;
     padding-bottom: 35px;
+    font-size: 18px;
   }
 }
 
@@ -89,7 +92,7 @@
   }
 
   .reviews__text {
-    max-width: 700px;
+    width: 700px;
     margin-top: 138px;
   }
 
@@ -133,7 +136,9 @@
   }
 
   .reviews__arrows-left:hover,
-  .reviews__arrows-right:hover {
+  .reviews__arrows-left:focus,
+  .reviews__arrows-right:hover,
+  .reviews__arrows-right:focus {
     opacity: 0.6;
   }
 

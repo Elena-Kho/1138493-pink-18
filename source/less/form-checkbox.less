@@ -31,7 +31,8 @@
   background: @text-background url("../img/icon-check.svg") no-repeat 50% 50%;
 }
 
-.form-checkbox__input:hover + label::before {
+.form-checkbox__input:hover + label::before,
+.form-checkbox__input:focus + label::before {
   border: 2px solid @text-color;
 }
 

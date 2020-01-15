@@ -25,16 +25,12 @@
   .glasses {
     display: none;
   }
-}
 
-.main-nav__logo-image:hover {
-  path {
+  &:hover path {
     fill: @likes-color;
   }
-}
 
-.main-nav__logo-image:active {
-  path {
+  &:active path {
     fill: rgba(255, 255, 255, 0.3);
   }
 }
@@ -66,30 +62,30 @@
 
   .main-nav--closed .main-nav__toggle {
     background: url("../img/icon-menu-burger.svg") no-repeat 50% 50%;
-  }
 
-  .main-nav--closed .main-nav__toggle:hover {
-    background: url("../img/icon-menu-burger-red.svg") no-repeat 50% 50%;
-  }
+    &:hover {
+      background: url("../img/icon-menu-burger-red.svg") no-repeat 50% 50%;
+    }
 
-  .main-nav--closed .main-nav__toggle:active {
-    background: url("../img/icon-menu-burger-red.svg") no-repeat 50% 50%;
-    opacity: 0.3;
+    &:active {
+      background: url("../img/icon-menu-burger-red.svg") no-repeat 50% 50%;
+      opacity: 0.3;
+    }
   }
 
   .main-nav--opened .main-nav__toggle {
     width: 24px;
     height: 24px;
     background: url("../img/icon-menu-cross.svg") no-repeat 50% 50%;
-  }
 
-  .main-nav--opened .main-nav__toggle:hover {
-    background: url("../img/icon-menu-cross-red.svg") no-repeat 50% 50%;
-  }
+    &:hover {
+      background: url("../img/icon-menu-cross-red.svg") no-repeat 50% 50%;
+    }
 
-  .main-nav--opened .main-nav__toggle:active {
-    background: url("../img/icon-menu-cross-red.svg") no-repeat 50% 50%;
-    opacity: 0.3;
+    &:active {
+      background: url("../img/icon-menu-cross-red.svg") no-repeat 50% 50%;
+      opacity: 0.3;
+    }
   }
 
   .main-nav--opened {

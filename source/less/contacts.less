@@ -23,6 +23,20 @@
   font-weight: 700;
   color: @text-color;
   text-align: center;
+
+  &--call .contacts__details a {
+    text-decoration: none;
+    color: @likes-color;
+  }
+
+  &--call .contacts__details {
+    margin-bottom: 19px;
+  }
+
+  &--email .contacts__details {
+    margin-top: 2px;
+    margin-bottom: 23px;
+  }
 }
 
 .contacts__details {
@@ -33,22 +47,9 @@
   color: @likes-color;
 }
 
-.contacts__paragraph--call .contacts__details a {
-  text-decoration: none;
-  color: @likes-color;
-}
-
-.contacts__paragraph--call .contacts__details {
-  margin-bottom: 19px;
-}
-
-.contacts__paragraph--email .contacts__details {
-  margin-top: 2px;
-  margin-bottom: 23px;
-}
-
 .contacts__details--email {
-  &:hover {
+  &:hover,
+  &:focus {
     position: relative;
     color: @text-color;
 
@@ -72,7 +73,7 @@
 
 @media (min-width: @tablet-width) {
   .contacts {
-    padding-bottom: 25px;
+    padding-bottom: 30px;
   }
 
   .contacts__heading {
@@ -95,7 +96,6 @@
   .contacts__wrapper-paragraph {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin: 0;
   }
 
@@ -114,7 +114,8 @@
 
   .contacts__paragraph--address {
     width: 250px;
-    margin-bottom: 0;
+    margin: 0 auto;
+    margin-top: 10px;
 
     span {
       margin: 0;
