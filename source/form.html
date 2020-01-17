@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="fonts/opensans.woff2">
-    <link rel="preload" href="fonts/opensansbold.woff2">
-    <link rel="preload" href="fonts/opensanslight.woff2">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
-    <script src="picturefill.js"></script>
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
     <header>
@@ -105,7 +105,7 @@
                 </li>
                 <li class="form__item form__item--gifts form-checkbox">
                   <input class="form-checkbox__input visually-hidden" id="gifts" type="checkbox" name="gifts" value="">
-                  <label class="form-checkbox__label form-input__label--checkbox" for="gifts">Накупил сувениров</label>
+                  <label class="form-checkbox__label" for="gifts">Накупил сувениров</label>
                 </li>
                 <li class="form__item form__item--tower form-checkbox">
                   <input class="form-checkbox__input visually-hidden" id="tower" type="checkbox" name="tower" value="" checked>
