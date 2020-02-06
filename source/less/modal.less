@@ -1,5 +1,6 @@
 .modal {
   position: fixed;
+  display: none;
   top: 20%;
   left: 50%;
   margin-left: -160px;
@@ -11,16 +12,19 @@
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
 
   &--sent {
-    display: none;
     width: 320px;
     height: 380px;
   }
 
   &--failure {
-    display: none;
     width: 320px;
     height: 288px;
   }
+}
+
+.modal--sent-show,
+.modal--failure-show {
+  display: block;
 }
 
 .modal__wrapper-button {
