@@ -120,22 +120,36 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <div class="reviews__wrapper">
-          <ul class="reviews__list container">
-            <li class="reviews__item">
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              <p class="reviews__name">Николай Петров</p>
-              <p class="reviews__age">25 лет, водитель трамвая</p>
-            </li>
-          </ul>
-          <ul class="reviews__buttons slider-controls container">
-            <li><button class="slider-controls__button slider-controls__button--active" type="button" aria-label="Слайд 1"></button></li>
-            <li><button class="slider-controls__button" type="button" aria-label="Слайд 2"></button></li>
-            <li><button class="slider-controls__button" type="button" aria-label="Слайд 3"></button></li>
-          </ul>
-          <ul class="reviews__arrows container">
-            <li><button class="reviews__arrows-left" type="button" aria-label="Назад"></button></li>
-            <li><button class="reviews__arrows-right" type="button" aria-label="Вперед"></button></li>
-          </ul>
+          <div class="reviews__slider">
+            <div class="reviews__list-wrapper">
+              <ul class="reviews__list">
+                <li class="reviews__item">
+                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                  <p class="reviews__name">Николай Петров</p>
+                  <p class="reviews__age">25 лет, водитель трамвая</p>
+                </li>
+                <li class="reviews__item">
+                  <p class="reviews__text">«Даже когда вокруг пасмурно и дождливо, я ловлю яркие моменты и делюсь ими с друзьями. Здорово, что есть приложение, которое поднимает настроение в любую погоду!»</p>
+                  <p class="reviews__name">Анна Степанова</p>
+                  <p class="reviews__age">18 лет, студент</p>
+                </li>
+                <li class="reviews__item">
+                  <p class="reviews__text">«Приложение скачал мне мой старший сын. Теперь мы делимся кадрами друг с другом и соревнуемся кто круче. Конечно, сын почти всегда побеждает, зато мне нравится, что у нас общее увлечение!»</p>
+                  <p class="reviews__name">Мария Машкина</p>
+                  <p class="reviews__age">35 лет, домохозяйка</p>
+                </li>
+              </ul>
+            </div>
+            <ul class="reviews__buttons slider-controls container">
+              <li><button class="slider-controls__button slider-controls__button--active" type="button" aria-label="Слайд 1"></button></li>
+              <li><button class="slider-controls__button" type="button" aria-label="Слайд 2"></button></li>
+              <li><button class="slider-controls__button" type="button" aria-label="Слайд 3"></button></li>
+            </ul>
+            <div class="reviews__arrows container">
+              <button class="reviews__arrows-prev" type="button" aria-label="Назад"></button>
+              <button class="reviews__arrows-next" type="button" aria-label="Вперед"></button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="price">
@@ -182,7 +196,7 @@
           <p class="contacts__heading">Остались вопросы?<span>Свяжитесь с нами!</span></p>
           <div class="contacts__wrapper-paragraph">
             <p class="contacts__paragraph contacts__paragraph--call">Звоните:<span class="contacts__details"><a href="tel:+78125556666">+7 (812) 555-66-66</a></span></p>
-            <p class="contacts__paragraph contacts__paragraph--email">Пишите:<span class="contacts__details contacts__details--email">mail@htmlacademy.ru</span></p>
+            <p class="contacts__paragraph contacts__paragraph--email">Пишите:<span class="contacts__details contacts__details--email"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span></p>
             <p class="contacts__paragraph contacts__paragraph--address">Приезжайте в гости:<span class="contacts__details">ул. Большая Конюшенная, 19/8</span></p>
           </div>
         </div>
@@ -246,5 +260,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/reviews.js"></script>
   </body>
 </html>

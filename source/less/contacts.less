@@ -24,7 +24,8 @@
   color: @text-color;
   text-align: center;
 
-  &--call .contacts__details a {
+  &--call .contacts__details a,
+  &--email .contacts__details a {
     text-decoration: none;
     color: @likes-color;
   }
@@ -48,6 +49,8 @@
 }
 
 .contacts__details--email {
+  text-decoration: none;
+  text-transform: none;
   &:hover,
   &:focus {
     position: relative;
@@ -70,6 +73,8 @@
     text-decoration: none;
   }
 }
+
+
 
 @media (min-width: @tablet-width) {
   .contacts {
