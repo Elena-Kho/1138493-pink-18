@@ -14,18 +14,14 @@
 
 .price__table {
   position: relative;
-  left: -302px;
-  width: 880px;
+  left: -300px;
+  width: 900px;
   padding: 0;
   margin-bottom: 40px;
   background-color: @text-background;
   border-collapse: collapse;
   border-right: 2px solid @border-color;
   overflow: hidden;
-}
-
-.price__option-name--first {
-  font-size: 0;
 }
 
 .price__tariff {
@@ -70,6 +66,8 @@
 }
 
 .price__option-name {
+  width: 34%;
+  padding: 0;
   padding-left: 23px;
   text-transform: uppercase;
   border-left: 2px solid @border-color;
@@ -84,6 +82,13 @@
   &--no {
     background-image: url("../img/icon-no.svg");
     background-position: 231px 16px;
+  }
+
+  &--first {
+    width: 1px;
+    font-size: 0;
+    padding: 0;
+    border: none;
   }
 }
 
